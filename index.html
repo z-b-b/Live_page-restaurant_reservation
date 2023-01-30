@@ -1,0 +1,324 @@
+<!---------------------->
+<!-- ZE'EV BEN-BASSAT -->
+<!---------------------->
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <!-- meta - For responsive website -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="icon" href="icons/mug_icon.ico" type="image/x-icon">
+            <link rel="stylesheet" href="includes/style.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+            <title>Final-Project Restaurant</title>
+        </head>
+        <body>
+            <!-- Navbar -->
+            <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+                    <div class="container">              
+                            <a class="navbar-brand" href="">
+                                    <img src="icons/cup-fill_icon.svg" width="30" height="24" class="d-inline-block align-text-top">
+                                    COFFEE &#153;
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">Reservation</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">Menu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">Gallery</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">Information</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" id="DropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Reservation in hebrew
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="DropdownMenuLink">
+                                            <li><a class="dropdown-item" href="hebrew_order.html">Order</a></li>       
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>                       
+                    </div>
+                </nav>
+                <header>
+                    <section id="home">
+                        <br><br>
+                        <h1 class="display-3 text-center mt-5 mb-5"><img src="icons/egg-fried_icon.svg">Welcome!<img src="icons/egg-fried_icon.svg"></h1>
+                        <!-- Carousel -->
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000"> <!-- 1000ms -->
+                            <div class="carousel-inner carousel_slide_images_height">
+                                <div class="carousel-item active">
+                                    <img src="images/carrousel1.jpg" class="d-block img-fluid mx-auto">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/carrousel2.jpg" class="d-block img-fluid mx-auto">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/carrousel3.jpg" class="d-block img-fluid mx-auto">
+                                </div>
+                            </div>
+                        </div>                        
+                    </section>
+                </header>
+                <main>
+                    <!-- About, Reservation, Menu, Gallery -->
+                    <section id="section1">
+                        <div class="container mt-5">
+                            <div class="row"> 
+                                <!-- About --> 
+                                <div class="col-lg-6 mx-auto border border-dark bg-light bg-gradient">
+                                    <p class="h4 text-center text-secondary text-decoration-underline">About the place and the chef</p>
+                                    <p>
+                                        Our cafe is located in the very center of the city in a cozy side street,
+                                        opposite the Tretyakov Gallery. 
+                                        At the beginning of the last century, three famous artists of that time lived in this building ...
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        Alizée Vongerichten born March 16, 1957 is one of the most famous chefs on earth,
+                                        She was born in Alsace France and now lives in the United States.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>  
+                        <!-- Reservation -->
+                        <div class="container mt-5">
+                          <div class="row justify-content-center"> 
+                            <div class="col-lg-6">
+                               <form action="#" method="POST">
+                                 <div class="col mx-auto border border-dark">
+                                    <p class="h4 text-secondary text-decoration-underline text-center">Reservation</p>                                    
+                                            <div>
+                                                <input class="form-control mb-1" type="text"  id="id1" name="name1" placeholder="Full name" required pattern="[A-Za-z]+" title="Enter only letters">
+                                                <input class="form-control mb-1" type="text"  id="id2" name="name2" placeholder="Cell phone number" required pattern="05?[0-9]-?[0-9]{7}" title="Enter a proper cell phone">
+                                                <input class="form-control mb-1" type="email" id="id3" name="name3" placeholder="Email">
+                                                <input class="form-control mb-1" type="date"  id="id4" name="name4">
+                                                <input class="form-control mb-1" type="text"  id="id6" name="name6" placeholder="Type of event" required pattern="[A-Za-z]+" title="Enter only letters">
+                                                <select class="form-select mb-1">
+                                                    <option disabled selected>Number of guests</option>
+                                                    <option>1-10</option>
+                                                    <option>10-20</option>
+                                                    <option>20-30</option>
+                                                    <option>30-40</option>
+                                                    <option>40-50</option>
+                                                </select>
+                                                <select class="form-select mb-1">
+                                                    <option disabled selected>Time of event</option>
+                                                    <option>17:00</option>
+                                                    <option>18:00</option>
+                                                    <option>19:00</option>
+                                                    <option>20:00</option>
+                                                    <option>21:00</option>
+                                                    <option>22:00</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <p class="h6 fw-bold">Save parking spaces?</p>
+                                                <div class="form-check mb-1"> 
+                                                    <input class="form-check-input" type="radio" id="radioOne" name="parking" value="none" checked />
+                                                    <label class="form-check-label" for="radioOne">Yes</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" id="radioTwo" name="parking" value="none" />
+                                                    <label class="form-check-label" for="radioTwo">No</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-outline-secondary mb-1">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>        
+                        </div>
+                    </section>
+                    <!-- Menu -->
+                    <section id="section2">
+                        <h1 class="display-6 text-center mt-5 mb-5">Menu</h1>
+                        <br>
+                        <div class="container my-3">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card mx-auto h-100" style="width: 18rem;">
+                                        <img src="images/breakfast_menu1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="h4 text-secondary text-decoration-underline text-center">Breakfast</p>
+                                            <h5 class="card-title">Meal time:</h5>
+                                            <p class="card-text">9:00-12:00</p>
+                                            <p class="card-text text-danger">Chef Alizée Vongerichten</p> 
+                                            <p class="card-text fw-lighter">Regular dish</p> 
+                                            <a href="#" class="btn btn-outline-secondary">Go to the menu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mx-auto h-100" style="width: 18rem;">
+                                        <img src="images/lunch_menu2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="h4 text-center text-secondary text-decoration-underline text-center ">Lunch</p>
+                                            <h5 class="card-title">Meal time:</h5>
+                                            <p class="card-text">12:00-18:00</p>
+                                            <p class="card-text text-danger">Chef Alizée Vongerichten</p> 
+                                            <p class="card-text fw-lighter">Spicy dish</p> 
+                                            <a href="#" class="btn btn-outline-secondary">Go to the menu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mx-auto h-100" style="width: 18rem;">
+                                        <img src="images/dinner_menu3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="h4 text-secondary text-decoration-underline text-center">Dinner</p>
+                                            <h5 class="card-title">Meal time:</h5>
+                                            <p class="card-text">18:00-20:00</p>
+                                            <p class="card-text text-danger">Chef Alizée Vongerichten</p> 
+                                            <p class="card-text fw-lighter">Vegetarian dish</p> 
+                                            <a href="#" class="btn btn-outline-secondary">Go to the menu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mx-auto h-100" style="width: 18rem;">
+                                        <img src="images/dinner_menu3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="h4 text-secondary text-decoration-underline text-center">Dinner</p>
+                                            <h5 class="card-title">Meal time:</h5>
+                                            <p class="card-text">20:00-22:00</p>
+                                            <p class="card-text text-danger">Chef Alizée Vongerichten</p>
+                                            <p class="card-text fw-lighter">Regular dish</p> 
+                                            <a href="#" class="btn btn-outline-secondary">Go to the menu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card mx-auto h-100" style="width: 18rem;">
+                                        <img src="images/breakfast_menu1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="h4 text-secondary text-decoration-underline text-center">Breakfast</p>
+                                            <h5 class="card-title">Meal time:</h5>
+                                            <p class="card-text">10:00-13:00</p>
+                                            <p class="card-text text-danger">Chef Victor Gloger</p>
+                                            <p class="card-text fw-lighter">Regular dish</p> 
+                                            <a href="#" class="btn btn-outline-secondary">Go to the menu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">           
+                                    <div class="card mx-auto h-100" style="width: 18rem;">
+                                        <img src="images/lunch_menu2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="h4 text-center text-secondary text-decoration-underline text-center ">Lunch</p>
+                                            <h5 class="card-title">Meal time:</h5>
+                                            <p class="card-text">13:00-18:00</p>
+                                            <p class="card-text text-danger">Chef Victor Gloger</p>
+                                            <p class="card-text fw-lighter">Regular dish</p> 
+                                            <a href="#" class="btn btn-outline-secondary">Go to the menu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mx-auto h-100" style="width: 18rem;">
+                                        <img src="images/dinner_menu3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="h4 text-secondary text-decoration-underline text-center">Dinner</p>
+                                            <h5 class="card-title">Meal time:</h5>
+                                            <p class="card-text">18:00-20:30</p>
+                                            <p class="card-text text-danger">Chef Victor Gloger</p>
+                                            <p class="card-text fw-lighter">Vegetarian dish</p> 
+                                            <a href="#" class="btn btn-outline-secondary">Go to the menu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mx-auto h-100" style="width: 18rem;">
+                                        <img src="images/dinner_menu3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="h4 text-secondary text-decoration-underline text-center">Dinner</p>
+                                            <h5 class="card-title">Meal time:</h5>
+                                            <p class="card-text">20:30-22:00</p>
+                                            <p class="card-text text-danger">Chef Victor Gloger</p>
+                                            <p class="card-text fw-lighter">Regular dish</p> 
+                                            <a href="#" class="btn btn-outline-secondary">Go to the menu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Gallery -->
+                    <section id="section3">
+                        <h1 class="display-6 text-center mt-5 mb-5">Gallery</h1>
+                        <br>
+                        <div class="d-sm-flex d-md-flex d-lg-flex flex-row justify-content-center">
+                            <div class="p-2 bd-highlight">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/gallery1.jpg" class="card-img-top">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            And undoubtedly the highlight of our restaurant is the original sandwiches,
+                                            for which guests from all over Moscow come to us for lunch. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/gallery2.png" class="card-img-top">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            You can talk about our pizza for hours, but let's just say the main thing the thinnest dough, 
+                                            a sea of ​​toppings and everything cooked in a wood-burning oven.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Information -->
+                    <section id="section4">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col mx-auto">
+                                    <h1 class="display-6 text-center mt-5 mb-5">Information</h1>
+                                    <br>
+                                    <p class="fs-5 text-center">Moscow, st. Tretyakovskaya 10, building 1 +7 (495) 225 25 25</p>
+                                    <div class="map-responsive">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.089092536539!2d37.63965868388702!3d55.739580980549775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b35bed9028f%3A0xe06252219f37ea4a!2sCrowne%20Plaza%20Moscow%20-%20Tretyakovskaya!5e0!3m2!1siw!2sil!4v1619378145572!5m2!1siw!2sil"
+                                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </section>
+                </main>
+                <footer>
+                    <!-- links, Copyrights -->
+                    <p class="fs-5 text-center mt-5 mb-5">This page contains Legal Contents relating to the use of the Site.</p>
+                    <p class="fs-6 text-center text-danger">&#169; Copyright 2021 COFFEE</p>
+                    <div class="position-relative">                            
+                        <div class="position-absolute bottom-5 end-0">
+                            <a href="https://www.facebook.com/"><img src="images/facebook.jpg"></a>
+                        </div>
+                    </div>
+                </footer> 
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        </body>
+    </html>

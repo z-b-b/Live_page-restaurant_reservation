@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="website-jscript/dropdown-hebrew-order.js" defer></script>
+            <title>הזמנת שולחן בשפה העברית</title>
+        </head>
+        <body>
+            <header>
+                <h1 style = "color: blue; text-align: center;">הזמנת שולחן בשפה העברית</h1>
+                <hr>
+            </header>
+            <main>
+                <form name = "directing" method = "post" action = "javascript:;" onsubmit = "return handleSubmit()"> 
+                    <table border = "0" align = "center">
+                        <tr>
+                            <td> 
+                                <input type = "text" name = "cellphone" size = "25" style = "direction: ltr"/>
+                            </td>
+                            <td>
+                                <font color = "red"> 
+                                    *
+                                </font>
+                                    :מס׳ פלאפון
+                            </td>
+                        </tr>   
+                        <tr>
+                            <td> 
+                                <input type = "text" name = "first_name" size = "25" style = "direction: rtl"/>
+                            </td>
+                            <td>
+                                <font color = "red"> 
+                                    *
+                                </font>
+                                    :שם פרטי
+                            </td>
+                        </tr>                          
+                        <tr>
+                            <td> 
+                                <input type = "text" name = "family_name" size = "25" style = "direction: rtl"/>
+                            </td>
+                            <td>
+                                <font color = "red"> 
+                                    *
+                                </font>
+                                    :שם משפחה
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type = "submit" value = "שלח"/>
+                            </td>
+                        </tr>
+                    </table>         
+                </form>
+            </main>
+        </body>
+    </html>
